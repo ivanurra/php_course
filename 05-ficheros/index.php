@@ -1,16 +1,25 @@
 <?php
 
 // Abrir archivo
-$archivo = fopen("fichero_texto.txt", "a+");
+// $archivo = fopen("fichero_texto.txt", "a+");
 
 // Leer contenido
-while(!feof($archivo)) {
-    $contenido = fgets($archivo);
-    echo $contenido."<br/>";
-}
+// while(!feof($archivo)) {
+//     $contenido = fgets($archivo);
+//     echo $contenido."<br/>";
+// }
 
 //  Escribir
-fwrite($archivo, "Text testing");
+// fwrite($archivo, "Text testing");
 
 // Cerrar archivo
-fclose($archivo);
+// fclose($archivo);
+
+// // Copiar
+// copy('fichero_texto.txt', 'fichero_copiado.txt') or die("Error al copiar");
+
+// Renombrar
+// rename('fichero_copiado.txt', 'fichero_copiadoB.txt');
+
+// Eliminar
+unlink('fichero_copiadoB.txt') or die("Error al borrar");
