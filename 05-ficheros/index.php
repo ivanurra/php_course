@@ -24,6 +24,7 @@
 // Eliminar
 // unlink('fichero_copiadoB.txt') or die("Error al borrar");
 
+
 if(file_exists("fichero_texto.txt")) {
     echo "El archivo existe.";
 } else {
